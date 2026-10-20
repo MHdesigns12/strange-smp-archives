@@ -2,13 +2,6 @@
 const SUPABASE_URL = "https://wgrpfvrsyjvjwrbccqyr.supabase.co/rest/v1/";
 const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_ZNfks9_OvIFysDWiVyS5Tg_-pnOSiRt";
 
-const supabaseClient = window.supabase.createClient(
-  SUPABASE_URL,
-  SUPABASE_PUBLISHABLE_KEY
-);
-
-"use strict";
-
 // Strange SMP Archives — website interactions
 
 document.addEventListener("DOMContentLoaded", () => {
