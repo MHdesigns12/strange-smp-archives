@@ -92,3 +92,18 @@ document.addEventListener("DOMContentLoaded", () => {
   // Real database connectivity will be added in a later step.
   console.info("Strange SMP Archives interface initialized.");
 });
+
+
+(async () => {
+  const { data, error } = await supabaseClient
+    .from("memories")
+    .select("id")
+    .eq("approved", true)
+    .limit(1);
+
+  if (error) {
+    console.error("Strange SMP database test failed:", error.message);
+  } else {
+    console.log("Strange SMP database connected successfully!");
+  }
+})();
