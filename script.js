@@ -1,5 +1,5 @@
 
-const SUPABASE_URL = "https://wgrpfvrsyjvjwrbccqyr.supabase.co/rest/v1/";
+const SUPABASE_URL = "https://wgrpfvrsyjvjwrbccqyr.supabase.co";
 const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_ZNfks9_OvIFysDWiVyS5Tg_-pnOSiRt";
 
 // Strange SMP Archives — website interactions
