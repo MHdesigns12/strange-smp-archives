@@ -91,16 +91,3 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-(async () => {
-  const { data, error } = await supabaseClient
-    .from("memories")
-    .select("id")
-    .eq("approved", true)
-    .limit(1);
-
-  if (error) {
-    console.error("Strange SMP database test failed:", error.message);
-  } else {
-    console.log("Strange SMP database connected successfully!");
-  }
-})();
