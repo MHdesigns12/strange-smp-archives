@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#203c2c">
+  <meta name="description" content="Strange SMP Archives — a home for our screenshots, builds, quotes, and unforgettable Minecraft memories.">
+  <title>Strange SMP Archives</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Strange SMP home">
+      <span class="brand-icon">🌿</span>
+      <span>STRANGE <span class="brand-accent">SMP</span>
+        <small>OUR WORLD. OUR STORIES.</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menu-toggle"
+      aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+    <nav class="navigation" id="navigation">
+      <a href="#home">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#quotes">Quotes</a>
+      <a href="#announcements">News & Events</a>
+      <a class="nav-button" href="#about">Our Community ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow"><span class="status-dot"></span> WELCOME TO OUR LITTLE WORLD</span>
+        <h1>Every block has<br>a <span>story to tell.</span></h1>
+        <p>
+          The builds we've created, the chaos we've caused,
+          and the memories we'll never forget.
+          Welcome to the Strange SMP Archives.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#gallery">Explore our memories ↗</a>
+          <a class="button button-outline" href="#quotes">Read the legends</a>
+        </div>
+        <div class="hero-note">
+          <span>⛏️</span> Built together, remembered forever.
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="Minecraft-inspired landscape">
+        <div class="sun"></div>
+        <div class="mountain mountain-back"></div>
+        <div class="mountain mountain-front"></div>
+        <div class="floating-block block-one">🌱</div>
+        <div class="floating-block block-two">🍄</div>
+        <div class="pixel-tree tree-one">🌲</div>
+        <div class="pixel-tree tree-two">🌳</div>
+        <div class="hero-caption">
+          <span>📍</span>
+          <span><strong>Somewhere in our world</strong>
+          <small>Home is what we build together.</small></span>
+        </div>
+      </div>
+      <div class="hero-decoration">✳</div>
+    </section>
+
+    <section class="welcome-strip">
+      <span>🌲</span>
+      <p>A little corner of the internet for our not-so-normal Minecraft family.</p>
+      <span>🍃</span>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">THE GOOD STUFF</span>
+          <h2>Our <span>memory chest.</span></h2>
+          <p>Big builds, tiny moments, and everything in between.</p>
+        </div>
+        <span class="section-emoji">📸</span>
+      </div>
+
+      <div class="filter-bar" id="gallery-filters">
+        <button class="filter active" data-filter="all">Everything</button>
+        <button class="filter" data-filter="screenshot">Screenshots</button>
+        <button class="filter" data-filter="build">Builds</button>
+        <button class="filter" data-filter="event">Events</button>
+        <button class="filter" data-filter="achievement">Achievements</button>
+      </div>
+
+      <div class="memory-grid" id="memory-grid">
+        <div class="empty-state">
+          <span>🧰</span>
+          <h3>Our memory chest awaits!</h3>
+          <p>Our screenshots and builds will show up here once we connect our archive.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section" id="quotes">
+      <div class="quote-decoration">“</div>
+      <span class="eyebrow">STRAIGHT FROM THE SERVER</span>
+      <h2>Words that belong<br>in the <span>history books.</span></h2>
+      <p>Questionable decisions. Legendary one-liners. Things that should probably stay in chat.</p>
+      <div class="quote-container" id="quote-container">
+        <div class="quote-placeholder">
+          <span>💬</span>
+          <p>The next legendary quote could be yours.</p>
+          <small>Our best quotes will live here.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section announcements-section" id="announcements">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">PINNED TO THE NOTICE BOARD</span>
+          <h2>What's <span>happening?</span></h2>
+          <p>Server news, upcoming events, and milestones worth celebrating.</p>
+        </div>
+        <span class="section-emoji">📌</span>
+      </div>
+      <div class="announcement-grid" id="announcement-grid">
+        <div class="empty-state">
+          <span>📜</span>
+          <h3>The notice board is waiting.</h3>
+          <p>Published announcements will appear here when our database is connected.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="community-section" id="about">
+      <div class="community-card">
+        <span class="community-icon">🏡</span>
+        <div>
+          <span class="eyebrow">MORE THAN A SURVIVAL WORLD</span>
+          <h2>Different players.<br>One <span>strange family.</span></h2>
+          <p>This is where our adventures live on, long after the last block is placed.</p>
+        </div>
+        <a class="button button-light" href="#gallery">Take a look around ↗</a>
+        <div class="community-leaves">🌿 🍄 🌱</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home">
+      <span class="brand-icon">🌿</span>
+      <span>STRANGE <span class="brand-accent">SMP</span>
+        <small>OUR WORLD. OUR STORIES.</small>
+      </span>
+    </a>
+    <p>Made with 🍃 and a questionable amount of diamonds.</p>
+    <a href="#home" class="back-to-top">Back to the surface ↑</a>
+    <small class="copyright">© <span id="current-year"></span> Strange SMP Archives</small>
+  </footer>
+</body>
+</html>
