@@ -1,4 +1,12 @@
 
+const SUPABASE_URL = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndncnBmdnJzeWp2andyYmNjcXlyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI0NDE5ODAsImV4cCI6MjEwODAxNzk4MH0.gL44sk8eAGvOnaN-j2ahnLetcej8DrGYfU7xP4Cp6kM";
+const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_ZNfks9_OvIFysDWiVyS5Tg_-pnOSiRt";
+
+const supabaseClient = window.supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_PUBLISHABLE_KEY
+);
+
 "use strict";
 
 // Strange SMP Archives — website interactions
