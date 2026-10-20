@@ -1,5 +1,5 @@
 
-const SUPABASE_URL = "https://mhdesigns12.github.io/strange-smp-archives/";
+const SUPABASE_URL = "https://wgrpfvrsyjvjwrbccqyr.supabase.co/rest/v1/";
 const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_ZNfks9_OvIFysDWiVyS5Tg_-pnOSiRt";
 
 const supabaseClient = window.supabase.createClient(
